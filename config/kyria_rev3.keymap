@@ -31,10 +31,7 @@
             #binding-cells = <0>;
             wait-ms = <U_WAIT_MS>;
             tap-ms = <U_TAP_MS>;
-            bindings
-                = <&macro_press     &kp RALT>
-                  , <&macro_tap     &kp KP_N0 &kp KP_N0 &kp D &kp F>
-                  , <&macro_release &kp RALT>;
+            bindings = <&macro_tap &kp CAPS &kp S &kp S>;
         };
         euro: euro {
             compatible = "zmk,behavior-macro";
@@ -42,10 +39,7 @@
             #binding-cells = <0>;
             wait-ms = <U_WAIT_MS>;
             tap-ms = <U_TAP_MS>;
-            bindings
-                = <&macro_press     &kp RALT>
-                  , <&macro_tap     &kp KP_N2 &kp KP_N0 &kp A &kp C>
-                  , <&macro_release &kp RALT>;
+            bindings = <&macro_tap &kp CAPS &kp E &kp KP_EQUAL>;
         };
         rev_accent: rev_accent {
             compatible = "zmk,behavior-macro";
@@ -53,10 +47,7 @@
             #binding-cells = <0>;
             wait-ms = <U_WAIT_MS>;
             tap-ms = <U_TAP_MS>;
-            bindings
-                = <&macro_press     &kp RALT>
-                  , <&macro_tap     &kp KP_N0 &kp KP_N0 &kp B &kp KP_N4>
-                  , <&macro_release &kp RALT>;
+            bindings = <&macro_tap &kp CAPS &kp APOS &kp APOS>;
         };
         de_ae: de_ae {
             compatible = "zmk,behavior-macro";
@@ -64,10 +55,7 @@
             #binding-cells = <0>;
             wait-ms = <U_WAIT_MS>;
             tap-ms = <U_TAP_MS>;
-            bindings
-                = <&macro_press     &kp RALT>
-                  , <&macro_tap     &kp KP_N0 &kp KP_N0 &kp E &kp KP_N4>
-                  , <&macro_release &kp RALT>;
+            bindings = <&macro_tap &kp CAPS &kp DQT &kp A>;
         };
         de_ae_shift: de_ae_shift {
             compatible = "zmk,behavior-macro";
@@ -76,9 +64,9 @@
             wait-ms = <U_WAIT_MS>;
             tap-ms = <U_TAP_MS>;
             bindings
-                = <&macro_press     &kp RALT>
-                  , <&macro_tap     &kp KP_N0 &kp KP_N0 &kp C &kp KP_N4>
-                  , <&macro_release &kp RALT>;
+                = <&macro_press     &kp LSHIFT>
+                  , <&macro_tap     &kp CAPS &kp DQT &kp A>
+                  , <&macro_release &kp LSHIFT>;
         };
         de_oe: de_oe {
             compatible = "zmk,behavior-macro";
@@ -86,10 +74,7 @@
             #binding-cells = <0>;
             wait-ms = <U_WAIT_MS>;
             tap-ms = <U_TAP_MS>;
-            bindings
-                = <&macro_press     &kp RALT>
-                  , <&macro_tap     &kp KP_N0 &kp KP_N0 &kp F &kp KP_N6>
-                  , <&macro_release &kp RALT>;
+            bindings = <&macro_tap &kp CAPS &kp DQT &kp O>;
         };
         de_oe_shift: de_oe_shift {
             compatible = "zmk,behavior-macro";
@@ -98,9 +83,9 @@
             wait-ms = <U_WAIT_MS>;
             tap-ms = <U_TAP_MS>;
             bindings
-                = <&macro_press     &kp RALT>
-                  , <&macro_tap     &kp KP_N0 &kp KP_N0 &kp D &kp KP_N6>
-                  , <&macro_release &kp RALT>;
+                = <&macro_press     &kp LSHIFT>
+                  , <&macro_tap     &kp CAPS &kp DQT &kp O>
+                  , <&macro_release &kp LSHIFT>;
         };
         de_ue: de_ue {
             compatible = "zmk,behavior-macro";
@@ -108,10 +93,7 @@
             #binding-cells = <0>;
             wait-ms = <U_WAIT_MS>;
             tap-ms = <U_TAP_MS>;
-            bindings
-                = <&macro_press     &kp RALT>
-                  , <&macro_tap     &kp KP_N0 &kp KP_N0 &kp F &kp C>
-                  , <&macro_release &kp RALT>;
+            bindings = <&macro_tap &kp CAPS &kp DQT &kp U>;
         };
         de_ue_shift: de_ue_shift {
             compatible = "zmk,behavior-macro";
@@ -120,9 +102,9 @@
             wait-ms = <U_WAIT_MS>;
             tap-ms = <U_TAP_MS>;
             bindings
-                = <&macro_press     &kp RALT>
-                  , <&macro_tap     &kp KP_N0 &kp KP_N0 &kp D &kp C>
-                  , <&macro_release &kp RALT>;
+                = <&macro_press     &kp LSHIFT>
+                  , <&macro_tap     &kp CAPS &kp DQT &kp U>
+                  , <&macro_release &kp LSHIFT>;
         };
         comsemi: comma_semi {
             compatible = "zmk,behavior-mod-morph";
