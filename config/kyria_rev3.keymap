@@ -124,6 +124,12 @@
             bindings = <&kp FSLH>, <&kp PIPE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        tildebslash: tilde_bslash {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE>, <&kp BSLH>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -132,15 +138,15 @@
         default_layer {
             label = "DEFAULT";
             // ----------------------------------------------------------------------------------------------------------------------------------
-            // |  ESC  |  Q  |  W  |  F    |  P   |  G   |                                          |  J   |  L    |  U    |  Y   |   -_  |   =+  |
-            // |  TAB  |  A  |  R  |  S    |  T   |  D   |                                          |  H   |  N    |  E    |  I   |   O   |   '\" |
-            // | SHIFT |  Z  |  X  |  C    |  V   |  B   |   GUI   | LAYER 1 |  | LAYER 2 | L SHIFT |  K   |  M    |  ,;   |  .:  |   /|  |   ~   |
-            //                     |Compose| DEL  | CTRL |  SPACE  |   ALT   |  | LAYER 1 |  RET    | TAB  | Entf  | Einfg |
+            // |  ESC  |  Q  |  W  |  F    |  P   |  G   |                                          |  J    |  L    |  U    |  Y   |   -_  |   =+  |
+            // |  TAB  |  A  |  R  |  S    |  T   |  D   |                                          |  H    |  N    |  E    |  I   |   O   |   '\" |
+            // | SHIFT |  Z  |  X  |  C    |  V   |  B   |   ALT   | LAYER 1 |  | LAYER 2 | R ALT   |  K    |  M    |  ,;   |  .:  |   /|  |   ~ \ |
+            //                     |Compose| DEL  | CTRL |  SPACE  |   GUI   |  | LAYER 1 |  RET    | RCTRL | Entf  | Einfg |
             bindings = <
             &kp ESC   &kp Q &kp W &kp F &kp P &kp G                                                  &kp J &kp L  &kp U     &kp Y     &kp MINUS  &kp EQUAL
             &kp TAB   &kp A &kp R &kp S &kp T &kp D                                                  &kp H &kp N  &kp E     &kp I     &kp O      &kp SQT
-            &sk LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LGUI &mo SYMBOL           &mo FUNCTION   &kp RSHFT &kp K &kp M  &comsemi  &dotcolon &slashpipe &kp TILDE
-                      &kp CAPS &kp BSPC &kp LCTRL &kp SPACE &kp LALT              &mo SYMBOL   &kp RET   &kp TAB &kp DEL &kp INS
+            &sk LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LALT &mo SYMBOL           &mo FUNCTION  &kp RALT &kp K &kp M  &comsemi  &dotcolon &slashpipe &tildebslash
+                      &kp CAPS &kp BSPC &kp LCTRL &kp SPACE &kp LGUI              &mo SYMBOL   &kp RET   &kp RCTRL &kp DEL &kp INS
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
