@@ -125,7 +125,7 @@
             bindings = <&kp FSLH>, <&kp PIPE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        tildebslash: tilde_q {
+        tildeq: tilde_q {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp TILDE>, <&kp QMARK>;
